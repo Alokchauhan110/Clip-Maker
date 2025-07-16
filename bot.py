@@ -50,7 +50,7 @@ async def get_video(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
 async def get_title(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Stores the title and asks for the channel name."""
     context.user_data['title'] = update.message.text
-    await update.message.reply_text("Got it. What is your channel/username? (e.g., '@ANIMATED_FLM')")
+    await update.message.reply_text("Got it. What is your channel/username? (e.g., '@Alokchauhan1100')")
     return GET_CHANNEL
 
 async def get_channel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
